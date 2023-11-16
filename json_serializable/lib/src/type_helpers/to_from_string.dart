@@ -8,19 +8,19 @@ import 'package:source_gen/source_gen.dart';
 import '../default_container.dart';
 
 final bigIntString = ToFromStringHelper(
-  'BigInt.parse',
+  'BigInt.tryParse',
   'toString()',
   'BigInt',
 );
 
 final dateTimeString = ToFromStringHelper(
-  'DateTime.parse',
+  'DateTime.tryParse',
   'toIso8601String()',
   'DateTime',
 );
 
 final uriString = ToFromStringHelper(
-  'Uri.parse',
+  'Uri.tryParse',
   'toString()',
   'Uri',
 );
@@ -74,7 +74,7 @@ class ToFromStringHelper {
       return null;
     }
 
-    final parseParam = isString ? expression : '$expression as String';
+    final parseParam = isString ? expression : '$expression.toString()';
 
     final output = '$_parse($parseParam)';
 

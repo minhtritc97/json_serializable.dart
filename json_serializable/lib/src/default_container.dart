@@ -5,7 +5,6 @@
 import 'package:analyzer/dart/element/type.dart';
 
 import 'lambda_result.dart';
-import 'shared_checkers.dart';
 import 'utils.dart';
 
 /// Represents an expression that may be represented differently if there is

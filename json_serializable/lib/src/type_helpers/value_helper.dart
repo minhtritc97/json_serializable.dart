@@ -43,11 +43,11 @@ class ValueHelper extends TypeHelper {
       // just return it as-is. We'll hope it's safe.
       return expression;
     }
-    //  else if (targetType.isDartCoreDouble) {
-    //   final targetTypeNullable = defaultProvided || targetType.isNullableType;
-    //   final question = targetTypeNullable ? '?' : '';
-    //   return '($expression as num$question)$question.toDouble()';
-    // }
+//  else if (targetType.isDartCoreDouble) {
+//   final targetTypeNullable = defaultProvided || targetType.isNullableType;
+//   final question = targetTypeNullable ? '?' : '';
+//   return '($expression as num$question)$question.toDouble()';
+// }
     else if (simpleJsonTypeChecker.isAssignableFromType(targetType)) {
       final typeCode = typeToCode(targetType, forceNullable: defaultProvided);
       switch (typeCode) {

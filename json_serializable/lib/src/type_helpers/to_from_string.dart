@@ -76,7 +76,9 @@ class ToFromStringHelper {
 
     final parseParam = isString ? expression : '$expression.toString()';
 
-    final output = '$_parse($parseParam)';
+    final questionMark = nullable ? '' : '!';
+
+    final output = '$_parse($parseParam)$questionMark';
 
     return DefaultContainer(
       expression,

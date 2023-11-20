@@ -8,9 +8,9 @@ library test;
 import 'dart:io';
 
 import 'package:build/build.dart';
+import 'package:flexible_json_serializable/builder.dart';
+import 'package:flexible_json_serializable/src/json_serializable_generator.dart';
 import 'package:json_annotation/json_annotation.dart';
-import 'package:json_serializable/builder.dart';
-import 'package:json_serializable/src/json_serializable_generator.dart';
 import 'package:test/test.dart';
 import 'package:yaml/yaml.dart';
 

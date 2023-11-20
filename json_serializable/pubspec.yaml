@@ -1,9 +1,10 @@
-name: json_serializable
-version: 6.7.2-wip
+name: flexible_json_serializable
+version: 1.0.0
 description: >-
+  Base on json_serializable package
   Automatically generate code for converting to and from JSON by annotating
   Dart classes.
-repository: https://github.com/google/json_serializable.dart/tree/master/json_serializable
+repository: https://github.com/minhtritc97/json_serializable.dart/tree/master/json_serializable
 environment:
   sdk: ^3.0.0
 topics:

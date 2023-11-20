@@ -9,7 +9,7 @@ library;
 
 import 'dart:io';
 
-import 'package:json_serializable/src/check_dependencies.dart';
+import 'package:flexible_json_serializable/src/check_dependencies.dart';
 import 'package:path/path.dart' as p;
 import 'package:pub_semver/pub_semver.dart';
 import 'package:pubspec_parse/pubspec_parse.dart';

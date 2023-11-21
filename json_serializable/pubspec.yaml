@@ -1,5 +1,5 @@
 name: flexible_json_serializable
-version: 1.0.0
+version: 1.0.1
 description: >-
   Base on json_serializable package
   Automatically generate code for converting to and from JSON by annotating

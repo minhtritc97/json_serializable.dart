@@ -107,6 +107,10 @@ class IterableHelper extends TypeHelper<TypeHelperContextWithConfig> {
       output += '$optionalQuestion.toSet()';
     }
 
+    if (defaultProvided) {
+      return '($output : [])';
+    }
+
     return '$output : []';
   }
 }

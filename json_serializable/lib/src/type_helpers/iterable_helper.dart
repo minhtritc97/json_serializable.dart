@@ -87,7 +87,7 @@ class IterableHelper extends TypeHelper<TypeHelperContextWithConfig> {
     // anything fancy
     if (closureArg == itemSubVal &&
         !_coreSetChecker.isExactlyType(targetType)) {
-      return output;
+      return '$expression as List<dynamic>';
     }
 
     output = '($output)';

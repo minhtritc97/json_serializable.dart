@@ -3,6 +3,7 @@
 // BSD-style license that can be found in the LICENSE file.
 
 import 'package:analyzer/dart/element/type.dart';
+import 'package:collection/collection.dart';
 
 import 'lambda_result.dart';
 import 'utils.dart';
@@ -25,7 +26,9 @@ class DefaultContainer {
       if (defaultValue != null || nullable) {
         if (targetType != null &&
             targetType is InterfaceType &&
-            targetType.getMethod('toJson') != null) {
+            targetType.constructors
+                    .firstWhereOrNull((e) => e.name == 'fromJson') !=
+                null) {
           return checkIsMapAndNull(
             value.expression,
             defaultValue ?? 'null',
@@ -45,7 +48,9 @@ class DefaultContainer {
     if (value is LambdaResult && defaultValue != null) {
       if (targetType != null &&
           targetType is InterfaceType &&
-          targetType.getMethod('toJson') != null) {
+          targetType.constructors
+                  .firstWhereOrNull((e) => e.name == 'fromJson') !=
+              null) {
         return checkIsMapAndNull(
             value.expression, defaultValue, value.toString());
       }

@@ -11,3 +11,7 @@
 ## 1.0.2
 
 - Fix: condition check is map and null
+
+## 1.0.3
+
+- Chore: Sync fork

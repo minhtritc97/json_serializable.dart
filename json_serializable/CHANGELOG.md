@@ -15,3 +15,7 @@
 ## 1.0.3
 
 - Chore: Sync fork
+
+## 1.0.4
+
+- Chore: Downgrade package meta

@@ -19,3 +19,7 @@
 ## 1.0.4
 
 - Chore: Downgrade package meta
+
+## 1.0.5
+
+- Chore: Revert commit upgrade package

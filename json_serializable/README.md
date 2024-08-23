@@ -15,7 +15,7 @@ Left: json_serializable
 
 Right: flexible_json_serializable
 
-![](resources/diff.jpg)
+![](resources/diff.png)
 
 
 [`BigInt`]: https://api.dart.dev/stable/dart-core/BigInt-class.html
